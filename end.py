@@ -54,7 +54,7 @@ v_sr = (1 * ft_1 + 2 * sd_2 + 3 * td_3 + 4 * fhd_4 + 5 * fh_5 + 6 * st_6)/sum_ch
 v_disp = (sr_qv - (v_sr ** 2)) * sum_chas / (sum_chas - 1)
 st_otcl = v_disp ** 0.5
 one_proc = st_otcl / 100
-kf_v = (st_otcl * (one_proc * 100)) / v_sr
+kf_v = (st_otcl/v_sr)*100
 print('Сумма частот - ', sum_chas)
 print('Выборочная средняя - ', v_sr)
 
